@@ -49,6 +49,10 @@ function initiateJob() {
     });
 }
 
+app.get('/', (req, res) => {
+    res.send("GET Request Called")
+})
+
 function uploadFileToServer(server, jobId, filePath) {
     return new Promise((resolve, reject) => {
         const uploadUrl = `${server}/upload-file/${jobId}`;
