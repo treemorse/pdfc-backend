@@ -50,7 +50,7 @@ function initiateJob() {
 }
 
 app.get('/', (req, res) => {
-    res.send("GET Request Called")
+    res.send("GET Request Called Type Req")
 })
 
 function uploadFileToServer(server, jobId, filePath) {
